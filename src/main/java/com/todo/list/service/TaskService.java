@@ -19,7 +19,7 @@ public class TaskService {
     }
     //Select or Read
     public List<Task> getAllTasks(){
-       return taskRepo.findAll();
+       return (List<Task>) taskRepo.findAll();
     }
     //Read by id
     public Optional<Task> getTaskById(Integer id){
